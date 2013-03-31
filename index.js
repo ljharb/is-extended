@@ -13,15 +13,7 @@
             return pSlice.call(args, slice);
         }
 
-        function keys(obj) {
-            var ret = [];
-            for (var i in obj) {
-                if (hasOwn.call(obj, i)) {
-                    ret.push(i);
-                }
-            }
-            return ret;
-        }
+		var keys = require('object-keys');
 
         //taken from node js assert.js
         //https://github.com/joyent/node/blob/master/lib/assert.js
