@@ -264,8 +264,8 @@ it.describe("is-extended",function (it) {
                 var argsA = arguments;
                 (function __deepEqual() {
                     assert.isTrue(is.deepEqual(argsA, arguments));
-                })(["a"]);
-            })(["a"]);
+                }(["a"]));
+            }(["a"]));
         });
         it.should("return false if the value are not deepEqual", function () {
             assert.isFalse(is.deepEqual({a: "b"}, {a: "a"}));
@@ -281,8 +281,8 @@ it.describe("is-extended",function (it) {
                 var argsA = arguments;
                 (function () {
                     assert.isFalse(is.deepEqual(argsA, 'a'));
-                })(["a"]);
-            })(["a"]);
+                }(["a"]));
+            }(["a"]));
         });
     });
 
